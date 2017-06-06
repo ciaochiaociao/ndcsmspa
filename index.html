@@ -21,20 +21,20 @@
                     <div class="mdl-layout-spacer"></div>
                     <!-- Navigation. We hide it in small screens. -->
                     <nav class="mdl-navigation mdl-layout--large-screen-only">
-                        <a class="mdl-navigation__link" href="">首頁</a>
-                        <a class="mdl-navigation__link" href="">關於我們</a>
-                        <a class="mdl-navigation__link" href="">活動紀錄</a>
-                        <a class="mdl-navigation__link" href="">國際化議題</a>
+                        <a class="mdl-navigation__link" href="index.html">首頁</a>
+                        <a class="mdl-navigation__link" href="about.html">關於我們</a>
+                        <a class="mdl-navigation__link" href="events.html">活動紀錄</a>
+                        <a class="mdl-navigation__link" href="issues.html">國際化議題</a>
                     </nav>
                 </div>
             </header>
             <div class="mdl-layout__drawer">
                 <span class="mdl-layout-title">外語役譯世界</span>
                 <nav class="mdl-navigation mdl-layout-spacer">
-                    <a class="mdl-navigation__link" href="">首頁</a>
-                    <a class="mdl-navigation__link" href="">關於我們</a>
-                    <a class="mdl-navigation__link" href="">活動紀錄</a>
-                    <a class="mdl-navigation__link" href="">國際化議題</a>
+                    <a class="mdl-navigation__link" href="index.html">首頁</a>
+                    <a class="mdl-navigation__link" href="about.html">關於我們</a>
+                    <a class="mdl-navigation__link" href="events.html">活動紀錄</a>
+                    <a class="mdl-navigation__link" href="issues.html">國際化議題</a>
                     <div class="mdl-layout-spacer"></div>
                     <span class="mdl-navigation__link" href="">&copy; 2017 外語役譯世界<br>保留所有權利</span>
                 </nav>
@@ -46,9 +46,9 @@
                         <div id="circle">
                             <h2 class="mdl-color-text--accent">外語役譯世界<br>帶世界走進台灣</h2>
                             <h4 class="mdl-color-text--grey-500">五大洲　十五個國家<br>留學經驗分享講座</h4>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="#contact-us">
                                 聯絡我們
-                            </button>
+                            </a>
                         </div>
                     </div>
 
@@ -88,9 +88,10 @@
                                     <input class="mdl-textfield__input" type="text" id="message-title">
                                     <label class="mdl-textfield__label" for="message-title">主旨</label>
                                 </div><br>
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" id="message-title">
-                                    <label class="mdl-textfield__label" for="message-title">訊息</label>
+
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <textarea class="mdl-textfield__input" type="text" rows= "10" id="message" ></textarea>
+                                    <label class="mdl-textfield__label" for="message">訊息</label>
                                 </div>
                             </form>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
@@ -99,8 +100,7 @@
                         </div>
                         <div id="contact-us-phone">
                             <h4>邀請我們去分享留學經驗</h4>
-                            <p>五大洲</p>
-                            <p>十五個國家</p>
+                            <p>五大洲<br>十五個國家</p>
                             <p>學士、碩士、博士</p>
                             <p>社會科學、自然科學、醫學各專業</p>
                             <p>
@@ -111,10 +111,9 @@
                             <h4>讓台灣青年們看到全世界</h4>
                             <p>我們熱愛分享，我們關注台灣。我們期望能分享我們的留學經驗，讓台灣學子們不用出國也可以看到全世界。</p>
                             <h4>聯絡方式</h4>
-                            <p><i class="material-icons">phone</i>+886-973-810-203</p>
-                            <p><i class="material-icons">mail</i>service@ndcsms.com</p>
+                            <p><i class="material-icons">phone</i><a href="tel:+886973810203">+886-973-810-203</a></p>
+                            <p><i class="material-icons">mail</i><a href="mailto://service@ndcsms.com">service@ndcsms.com</a></p>
                             <p><a href="https://www.facebook.com/ndcsmspa" target="_blank"><img src="https://en.facebookbrand.com/wp-content/uploads/2016/05/FB-FindUsOnFacebook-printpackaging-2.png" alt="Find us on Facebook" height="24px" width="auto"></a></p>
-                            <!--<p><a href="https://www.facebook.com/ndcsmspa">www.facebook.com/ndcsmspa</a><br>或直接搜尋「<a href="https://www.facebook.com/ndcsmspa">外語役譯世界</a>」</p>-->
                         </div>
                     </div>
                 </div>
@@ -124,15 +123,19 @@
                             外語役譯世界
                         </div>
                         <ul class="mdl-mini-footer__link-list">
+                            <!--
                             <li><a href="#">Help</a></li>
                             <li><a href="#">Privacy and Terms</a></li>
                             <li><a href="#">User Agreement</a></li>
+                            -->
                         </ul>
                     </div>
                     <div class="mdl-mini-footer__right-section">
-                        <ul>
-                            <li class="mdl-mini-footer--social-btn">
-                                <a href="https://facebook.com/ndcsms" class="social-btn social-btn__facebook" role="button" title="Facebook" target="_blank"></a>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li>
+                                <a href="http://facebook.com/ndcsmspa" target="_blank" title="Facebook">
+                                    <button class="mdl-mini-footer__social-btn social-btn__facebook"></button>
+                                </a>
                             </li>
                         </ul>
                     </div>
