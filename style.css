@@ -11,7 +11,13 @@ nav span:hover {
 }
 
 /* Main */
-.page-content div, .page-content h2 {
+.page-content div,
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6 {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
