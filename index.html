@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css" />
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
         <!-- Custom -->
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
@@ -56,19 +57,19 @@
                     <div id="lastest-event"><a href="https://www.facebook.com/events/743988865763344/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A1849217238690278%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A1849217238690278%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D]%2C%22has_source%22%3Atrue%7D" target="_blank"><img src="images/%E5%89%8D%E9%80%B2%E5%8F%A4%E9%83%BD1920%C3%97711.png" alt="前進古都"/></a></div>
 
                     <h2 class="mdl-color-text--accent">關於我們</h2>
-                    <div id="who-are-we">
-                        <div>
+                    <div id="our">
+                        <div id="our-education">
                             <img src="images/education.png" alt="不同學術歷練">
                             <h4>不同學術歷練</h4>
                             <p>從社會人文科學、自然理工學科到醫學系，涵蓋第一二三類組、大學到博士不同的學術經驗</p>
                         </div>
-                        <div>
-                            <img src="images/experience.jpeg" alt="廣泛領域經驗">
+                        <div id="our-experience">
+                            <img src="images/experience.png" alt="廣泛領域經驗">
                             <h4>廣泛領域經驗</h4>
                             <p>從留學生、醫學系到創業的經驗</p>
                         </div>
-                        <div>
-                            <img src="images/counties.jpeg" alt="五洲十五國">
+                        <div id="our-counties">
+                            <img src="images/counties.png" alt="五洲十五國">
                             <h4>五洲十五國</h4>
                             <p>來自大洋洲、北美洲、非洲、亞洲、歐洲，廣及十個國家的留學經驗</p>
                         </div>
@@ -78,25 +79,34 @@
                     <div id="contact-us">
                         <div id="contact-us-message">
                             <h4>歡迎來信我們「外語役譯世界 」</h4>
-                            <form action="#">
+
+                            <!--
+<form action="https://formspree.io/you@email.com">
+<input type="text" name="name">
+<input type="email" name="_replyto">
+<input type="submit" value="Send">
+</form>-->
+
+                            <form action="https://formspree.io/jerrylin1992@gmail.com" method="post" enctype="text/plain">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="email" id="email">
+                                    <input class="mdl-textfield__input" type="text" id="name" name="name">
+                                    <label class="mdl-textfield__label" for="name">姓名（必填）</label>
+                                </div><br>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="email" id="email" name="_replyto">
                                     <label class="mdl-textfield__label" for="email">電子郵件（必填）</label>
                                 </div><br>
-
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <input class="mdl-textfield__input" type="text" id="message-title">
-                                    <label class="mdl-textfield__label" for="message-title">主旨</label>
+                                    <textarea class="mdl-textfield__input" type="text" rows= "10" id="message" name="message"></textarea>
+                                    <label class="mdl-textfield__label" for="message">訊息（必填）</label>
                                 </div><br>
-
-                                <div class="mdl-textfield mdl-js-textfield">
-                                    <textarea class="mdl-textfield__input" type="text" rows= "10" id="message" ></textarea>
-                                    <label class="mdl-textfield__label" for="message">訊息</label>
-                                </div>
+                                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Send">
+                                    傳送
+                                </button>
+                                <button type="reset" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Reset">
+                                    清除
+                                </button>
                             </form>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                                傳送
-                            </button>
                         </div>
                         <div id="contact-us-phone">
                             <h4>邀請我們去分享留學經驗</h4>
@@ -109,7 +119,7 @@
                                 用有趣的課程來提升孩子英語力吧！
                             </p>
                             <h4>讓台灣青年們看到全世界</h4>
-                            <p>我們熱愛分享，我們關注台灣。我們期望能分享我們的留學經驗，讓台灣學子們不用出國也可以看到全世界。</p>
+                            <p>我們熱愛分享，我們關注台灣。<br>我們期望能分享我們的留學經驗，<br>讓台灣學子們不用出國也可以看到全世界。</p>
                             <h4>聯絡方式</h4>
                             <p><i class="material-icons">phone</i><a href="tel:+886973810203">+886-973-810-203</a></p>
                             <p><i class="material-icons">mail</i><a href="mailto://service@ndcsms.com">service@ndcsms.com</a></p>
@@ -124,10 +134,10 @@
                         </div>
                         <ul class="mdl-mini-footer__link-list">
                             <!--
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Privacy and Terms</a></li>
-                            <li><a href="#">User Agreement</a></li>
-                            -->
+<li><a href="#">Help</a></li>
+<li><a href="#">Privacy and Terms</a></li>
+<li><a href="#">User Agreement</a></li>
+-->
                         </ul>
                     </div>
                     <div class="mdl-mini-footer__right-section">

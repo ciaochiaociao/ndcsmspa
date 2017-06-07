@@ -1,6 +1,9 @@
 a {
     text-decoration: none;
 }
+i {
+    margin: 8px;
+}
 
 /* Navigation */
 nav span:hover {
@@ -41,37 +44,38 @@ nav span:hover {
     height: auto;
 }
 
-#who-are-we {
+#our {
     display: flex;
 }
-#who-are-we div:nth-child(1){
-    width: 30%;
+#our div {
+    width: 100%;
 }
-#who-are-we div:nth-child(2){
+#our img {
+    height: 200px;
+}
+/*
+#our div:nth-child(1){
+    
+}
+#our div:nth-child(2){
     width: 40%;
 }
-#who-are-we div:nth-child(3){
+#our div:nth-child(3){
     width: 30%;
+}
+*/
+form div{
+    width: 100% !important;
 }
 
 #contact-us {
     display: flex;
 }
-#contact-us-message {
+#contact-us-message, #contact-us-phone {
+    padding: 3%;
     width: 50%;
     text-align: left;
 }
-#contact-us-phone {
-    width: 50%;
-    text-align: left;
-}
-#contact-us-phone p {
-    vertical-align: middle;
-}
-#contact-us-phone i {
-    margin: 8px;
-}
-
 .page-content div:last-child {
     margin-bottom: 16px;
 }
