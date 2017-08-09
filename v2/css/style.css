@@ -1,0 +1,40 @@
+* {
+    color: white;
+}
+
+.mdl-layout-transparent {
+    background: none;
+    background-color: inherit;
+}
+
+.top {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+
+.top>.content {
+    background-color: darkgray;
+}
+
+.mdl-mini-footer__social-btn {
+    background-color: inherit;
+}
+
+.social-btn {
+    background-position: center;
+    background-size: cover;
+}
+
+.social-btn__facebook {
+    background-image: url(https://www.gstatic.com/images/icons/material/system/2x/post_facebook_white_48dp.png);
+}
+
+.social-btn__youtube {
+    background-image: url(https://www.gstatic.com/images/icons/material/system/2x/post_youtube_white_48dp.png);
+}
+
+.social-btn__gplus {
+    background-image: url(https://www.gstatic.com/images/icons/material/system/2x/post_gplus_white_48dp.png);
+}
