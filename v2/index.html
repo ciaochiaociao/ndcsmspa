@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>外語役譯世界</title>
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <!-- Customise -->
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>外語役譯世界</title>
-    <!-- Material Design Lite -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <!-- Customise -->
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/script.js"></script>
-</head>
+    <body>
+        <style>
+            .mdl-layout-transparent {
+                /*background: url('img/bg.jpg') center / cover;*/
+            }
 
-<body>
-    <style>
-        .mdl-layout-transparent {
-            //background: url('img/bg.jpg') center / cover;
-        }
-        
-        .mdl-layout-transparent .mdl-layout__header,
-        .mdl-layout-transparent .mdl-layout__drawer-button {
-            /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-            color: white;
-        }
+            .mdl-layout-transparent .mdl-layout__header,
+            .mdl-layout-transparent .mdl-layout__drawer-button {
+                /* This background is dark, so we set text to white. Use 87% black instead if
+                your background is light. */
+                /*color: white;*/
+            }
 
-    </style>
+        </style>
 
-    <div class="mdl-layout-transparent mdl-layout mdl-js-layout">
-        <header class="mdl-layout__header mdl-layout__header--transparent">
-            <div class="mdl-layout__header-row">
-                <!-- Title -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">外語役譯世界</span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation -->
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="index.html">首頁</a>
+                        <a class="mdl-navigation__link" href="about.html">關於我們</a>
+                        <a class="mdl-navigation__link" href="events.html">活動紀錄</a>
+                        <a class="mdl-navigation__link" href="issues.html">國際化議題</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
                 <span class="mdl-layout-title">外語役譯世界</span>
-                <!-- Add spacer, to align navigation to the right -->
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navigation -->
                 <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="index.html">首頁</a>
                     <a class="mdl-navigation__link" href="about.html">關於我們</a>
@@ -43,62 +52,91 @@
                     <a class="mdl-navigation__link" href="issues.html">國際化議題</a>
                 </nav>
             </div>
-        </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">外語役譯世界</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="index.html">首頁</a>
-                <a class="mdl-navigation__link" href="about.html">關於我們</a>
-                <a class="mdl-navigation__link" href="events.html">活動紀錄</a>
-                <a class="mdl-navigation__link" href="issues.html">國際化議題</a>
-            </nav>
-        </div>
-        <main class="mdl-layout__content">
-            <div class="mdl-grid top">
-                <div class="mdl-cell mdl-cell--3-col content"></div>
-                <div class="mdl-cell mdl-cell--6-col content">
-                    <h1 class="mdl-typography--text-center mdl-cell mdl-cell--12-col">外語役譯世界</h1>
-                    <h3 class="mdl-typography--text-center mdl-cell mdl-cell--12-col">帶世界走進台灣</h3>
-                    <h5 class="mdl-typography--text-center mdl-cell mdl-cell--12-col">五大洲　十五個國家<br>留學經驗分享講座</h5>
-                </div>
-                <div class="mdl-cell mdl-cell--6-col content"></div>
-            </div>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <h1>title</h1>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">
-                        More Information
+            <main class="mdl-layout__content">
+                <div class="top">
+                    <div class="content mdl-typography--text-center">
+                        <h1>外語役譯世界</h1>
+                        <h2>帶世界走進台灣</h2>
+                        <h4>五大洲十五個國家<br>留學經驗分享講座</h4>
+                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" href="#index-contact">聯絡我們</a>
                     </div>
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy and Terms</a></li>
-                        <li><a href="#">User Agreement</a></li>
-                    </ul>
                 </div>
-                <div class="mdl-mini-footer__right-section">
-                    <a href="https://facebook.com/ndcsmspa" target="_blank"><button class="mdl-mini-footer__social-btn social-btn social-btn__facebook"></button></a>
-                    <a href="https://www.youtube.com/channel/UCI_x2uESQ4wgBh5HAIfo9Cw" target="_blank"><button class="mdl-mini-footer__social-btn social-btn social-btn__youtube"></button></a>
-                    <a href="https://plus.google.com/b/115939988627140482396/" target="_blank"><button class="mdl-mini-footer__social-btn social-btn social-btn__gplus"></button></a>
+                <div class="mdl-typography--text-center" id="index-lastevent">
+                    <h1>近期活動</h1>
+                    <div class="mdl-grid">
+                        <h2 class="mdl-cell mdl-cell--12-col">前進古都</h2>
+                        <h4 class="mdl-cell mdl-cell--12-col">金牌外語役台南場</h4>
+                        <a href="https://www.facebook.com/events/743988865763344/"><img class="mdl-cell mdl-cell--12-col" src="img/前進古都1920×711.png" alt="金牌外語役台南場：前進古都"></a>
+                    </div>
                 </div>
-            </footer>
-        </main>
-    </div>
-</body>
+                <div class="mdl-typography--text-center" id="index-aboutus">
+                    <h1>關於我們</h1>
+                </div>
+                <div class="mdl-typography--text-center" id="index-contact">
+                    <h1>與我們聯絡</h1>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                            <h4>歡迎來信我們「外語役譯世界」</h4>
+                            <form action="#" class="mdl-grid">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                                    <input class="mdl-textfield__input" type="text" id="feedbackName" disabled>
+                                    <label class="mdl-textfield__label" for="feedbackName">姓名（必填）</label>
+                                </div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                                    <input class="mdl-textfield__input" type="email" id="feedbackEmail" disabled>
+                                    <label class="mdl-textfield__label" for="feedbackEmail">電子信箱（必填）</label>
+                                </div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                                    <textarea class="mdl-textfield__input" type="text" rows="10" id="feedbackMessage" disabled></textarea>
+                                    <label class="mdl-textfield__label" for="feedbackMessage">訊息（必填）</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                            <h4>邀請我們去分享留學經驗</h4>
+                            <p>五大洲、十五個國家<br>學士、碩士、博士</p>
+                            <p>社會科學、自然科學、醫學各專業<br>高科技公司、金融頁、創業各領域</p>
+                            <p>留學經驗分享講座<br> 用有趣的課程來提升孩子英語力吧！</p>
+                            <h4>讓台灣青年們看到全世界</h4>
+                            <p>我們熱愛分享，我們關注台灣。<br>我們期望能分享我們的留學經驗，<br>讓台灣學子們不用出國也可以看到全世界。</p>
+                            <h4>聯絡方式</h4>
+                            <ul class="mdl-list-icon mdl-list">
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                        <i class="material-icons mdl-list__item-icon">phone</i>
+                                        <a href="tel:+886973810203">+886-973-810-203</a>
+                                    </span>
+                                </li>
+                                <li class="mdl-list__item">
+                                    <span class="mdl-list__item-primary-content">
+                                        <i class="material-icons mdl-list__item-icon">mail</i>
+                                        <a href="mailto:mailservice@ndcsms.com?bcc=jerrylin1992@gmail.com">mailservice@ndcsms.com</a>
+                                    </span>
+                                </li>
+                            </ul>
+                            <a href="https://www.facebook.com/ndcsmspa" target="_blank"><img src="img/FindUs_zhTW-Online/FB-FindUsonFacebook-online-100_zh_TW.png" alt="快來逛逛Facebook"></a>
+                        </div>
+                    </div>
+                </div>
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo">
+                            外語役譯世界
+                        </div>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Privacy and Terms</a></li>
+                            <li><a href="#">User Agreement</a></li>
+                        </ul>
+                        <a href="https://facebook.com/ndcsmspa" target="_blank"><button class="mdl-mini-footer__social-btn social-btn social-btn__facebook"></button></a>
+                        <a href="https://www.youtube.com/channel/UCI_x2uESQ4wgBh5HAIfo9Cw" target="_blank"><button class="mdl-mini-footer__social-btn social-btn social-btn__youtube"></button></a>
+                        <a href="https://plus.google.com/b/115939988627140482396/" target="_blank"><button class="mdl-mini-footer__social-btn social-btn social-btn__gplus"></button></a>
+                    </div>
+                    <div class="mdl-mini-footer__right-section">
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
 
 </html>
