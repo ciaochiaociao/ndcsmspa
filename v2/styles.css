@@ -1,0 +1,659 @@
+/**
+* Copyright 2015 Google Inc. All Rights Reserved.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+h1, h2, h3, h4, h5, h6, div, a, span, button, textfield, input, label, img, figure, p {
+    font-family: 'Noto Sans TC', 'PingFang TC', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+    border: 0px;
+}
+
+::-moz-selection {
+    background-color: #03A9F4;
+    color: #fff;
+}
+
+::selection {
+    background-color: #03A9F4;
+    color: #fff;
+}
+
+.mdl-layout__header {
+    color: initial;
+}
+
+.ndcsmspa-search-box .mdl-textfield__input {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.ndcsmspa-header .mdl-menu__container {
+    z-index: 50;
+    margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+    width: auto;
+}
+
+.ndcsmspa-fab {
+    position: absolute;
+    right: 20%;
+    bottom: -26px;
+    z-index: 3;
+    background: #F44336 !important;
+    color: while !important;
+}
+
+.ndcsmspa-mobile-title {
+    display: none !important;
+}
+
+
+.ndcsmspa-logo-image {
+    height: 28px;
+    width: 140px;
+}
+
+
+.ndcsmspa-header {
+    overflow: visible;
+    background-color: white;
+}
+
+.ndcsmspa-header .material-icons {
+    color: #767777 !important;
+}
+
+.ndcsmspa-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+}
+
+.ndcsmspa-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.ndcsmspa-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ndcsmspa-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 800px;
+}
+
+.ndcsmspa-search-box.is-focused + .ndcsmspa-navigation-container {
+    opacity: 0;
+    width: 100px;
+}
+
+
+.ndcsmspa-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+}
+
+.ndcsmspa-navigation .mdl-navigation__link:hover {
+    border-bottom: 4px solid #8bc34a;
+}
+
+.ndcsmspa-search-box {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.ndcsmspa-more-button {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+}
+
+
+.ndcsmspa-drawer {
+    border-right: none;
+}
+
+.ndcsmspa-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+}
+
+.ndcsmspa-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+}
+
+.ndcsmspa-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #8bc34a;
+}
+
+.ndcsmspa-drawer .mdl-layout-title {
+    position: relative;
+    background: #6ab344;
+    height: 160px;
+}
+
+.ndcsmspa-drawer .ndcsmspa-logo-image {
+    position: absolute;
+    bottom: 16px;
+}
+
+.ndcsmspa-be-together-section {
+    position: relative;
+    height: 800px;
+    width: auto;
+    background-color: #f3f3f3;
+    background: url('images/bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.logo-font {
+    /*font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;*/
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+    font-weight: 500;
+    font-weight: 300;
+}
+
+.ndcsmspa-slogan {
+    font-size: 60px;
+    font-size: 121px;
+    padding-top: 240px;
+}
+
+.ndcsmspa-sub-slogan {
+    font-size: 21px;
+    padding-top: 24px;
+}
+
+.ndcsmspa-contact-us {
+    font-size: 21px;
+    padding-top: 64px;
+}
+
+.ndcsmspa-contact-us a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+}
+
+.ndcsmspa-screen-section {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.ndcsmspa-screens {
+    margin-top: 64px;
+    text-align: left;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.ndcsmspa-screen {
+    text-align: center;
+}
+
+.ndcsmspa-screen .ndcsmspa-link {
+    margin-top: 16px;
+    display: block;
+    z-index: 2;
+}
+
+.ndcsmspa-image-link {
+    text-decoration: none;
+}
+
+.ndcsmspa-tom, .ndcsmspa-chiao, .ndcsmspa-nieljack, .ndcsmspa-steven {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+}
+
+.ndcsmspa-tom .ndcsmspa-screen-image,
+.ndcsmspa-chiao .ndcsmspa-screen-image,
+.ndcsmspa-nieljack .ndcsmspa-screen-image,
+.ndcsmspa-steven .ndcsmspa-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+.ndcsmspa-wear {
+    display: inline-block;
+    width: 160px;
+    margin-right: 32px;
+}
+
+.ndcsmspa-wear .ndcsmspa-screen-image {
+    width: 40%;
+    z-index: 1;
+}
+
+
+.ndcsmspa-phone {
+    display: inline-block;
+    width: 64px;
+    margin-right: 48px;
+}
+
+.ndcsmspa-phone .ndcsmspa-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+
+.ndcsmspa-tablet {
+    display: inline-block;
+    width: 110px;
+    margin-right: 64px;
+}
+
+.ndcsmspa-tablet .ndcsmspa-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+.ndcsmspa-tablet .ndcsmspa-link {
+    display: block;
+    z-index: 2;
+}
+
+
+.ndcsmspa-tv {
+    display: inline-block;
+    width: 300px;
+    margin-right: 80px;
+}
+
+.ndcsmspa-tv .ndcsmspa-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+
+.ndcsmspa-auto {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+}
+
+.ndcsmspa-auto .ndcsmspa-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+}
+
+
+.ndcsmspa-event-section {
+    position: relative;
+    background: url('images/event-tainan.png') center top no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.ndcsmspa-event-latest {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #37474f;
+}
+
+.ndcsmspa-event-latest-text {
+    max-width: 800px;
+    margin-left: 25%;
+    padding: 24px;
+    text-align: left;
+    color: white;
+}
+
+.ndcsmspa-event-latest-text p {
+    padding-top: 8px;
+}
+.ndcsmspa-wear-section {
+    position: relative;
+    background: url('images/wear.png') center top no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.ndcsmspa-wear-band {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #37474f;
+}
+
+.ndcsmspa-wear-band-text {
+    max-width: 800px;
+    margin-left: 25%;
+    padding: 24px;
+    text-align: left;
+    color: white;
+}
+
+.ndcsmspa-wear-band-text p {
+    padding-top: 8px;
+}
+
+.ndcsmspa-link {
+    text-decoration: none;
+    color: #8bc34a !important;
+}
+
+.ndcsmspa-link:hover {
+    color: #7cb342 !important;
+}
+
+.ndcsmspa-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.ndcsmspa-alt-link {
+    text-decoration: none;
+    color: #64ffda !important;
+    font-size: 16px;
+}
+
+.ndcsmspa-alt-link:hover {
+    color: #00bfa5 !important;
+}
+
+.ndcsmspa-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.ndcsmspa-customized-section {
+    text-align: center;
+}
+
+.ndcsmspa-customized-section-text {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 16px 0 16px;
+}
+
+.ndcsmspa-customized-section-text p {
+    padding-top: 16px;
+}
+
+.ndcsmspa-customized-section-image {
+    background: url('images/devices.jpg') center top no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.ndcsmspa-about-section {
+    padding: 80px 0;
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ndcsmspa-about-section .ndcsmspa-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+}
+.ndcsmspa-more-section {
+    padding: 80px 0;
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ndcsmspa-more-section .ndcsmspa-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+}
+
+.ndcsmspa-card-container {
+}
+
+.ndcsmspa-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+}
+
+.ndcsmspa-card-container .mdl-card__media img {
+    width: 100%;
+}
+
+.ndcsmspa-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+}
+
+.ndcsmspa-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+}
+
+.ndcsmspa-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+}
+
+.ndcsmspa-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+}
+
+.ndcsmspa-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+}
+
+.ndcsmspa-footer {
+    background-color: #fafafa;
+    position: relative;
+}
+
+.ndcsmspa-footer a:hover {
+    color: #8bc34a;
+}
+
+.ndcsmspa-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+}
+
+.ndcsmspa-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+}
+
+.ndcsmspa-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+}
+
+.ndcsmspa-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+}
+
+.ndcsmspa-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+}
+
+
+.ndcsmspa-link-menu:hover {
+    cursor: pointer;
+}
+
+
+.mdl-mega-footer--social-btn {
+    background-color: transparent;
+    margin: 0 8px;
+}
+.social-btn {
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.mdl-mega-footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+..mdl-mega-footer ul li {
+    position: relative;
+}
+.social-btn__facebook {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
+}
+.social-btn__gplus {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
+}
+.social-btn__youtube {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_youtube_black_24dp.png');
+}
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+    .ndcsmspa-navigation-container {
+        display: none;
+    }
+
+    .ndcsmspa-title {
+        display: none !important;
+    }
+
+    .ndcsmspa-mobile-title {
+        display: block !important;
+        position: absolute;
+        left: calc(50% - 70px);
+        top: 12px;
+        transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+    consecutive "+" operators in some cases. Therefore, we need to use both
+    here to cover all the bases. */
+    .android.ndcsmspa-search-box.is-focused ~ .ndcsmspa-mobile-title,
+    .ndcsmspa-search-box.is-focused + .ndcsmspa-navigation-container + .ndcsmspa-mobile-title {
+        opacity: 0;
+    }
+
+    .ndcsmspa-more-button {
+        display: none;
+    }
+
+    .ndcsmspa-search-box.is-focused {
+        width: calc(100% - 48px);
+    }
+
+    .ndcsmspa-search-box .mdl-textfield__expandable-holder {
+        width: 100%;
+    }
+
+    .ndcsmspa-be-together-section {
+        height: 350px;
+    }
+
+    .ndcsmspa-slogan {
+        font-size: 26px;
+        margin: 0 16px;
+        padding-top: 121px;
+    }
+
+    .ndcsmspa-sub-slogan {
+        font-size: 16px;
+        margin: 0 16px;
+        padding-top: 8px;
+    }
+
+    .ndcsmspa-create-character {
+        padding-top: 200px;
+        font-size: 16px;
+    }
+
+    .ndcsmspa-create-character img {
+        height: 12px;
+    }
+
+    .ndcsmspa-fab {
+        display: none;
+    }
+
+    .ndcsmspa-event-latest-text {
+        margin-left: 0;
+        padding: 16px;
+    }
+
+    .ndcsmspa-wear-band-text {
+        margin-left: 0;
+        padding: 16px;
+    }
+
+    .ndcsmspa-footer .mdl-mega-footer--bottom-section {
+        display: none;
+    }
+}
